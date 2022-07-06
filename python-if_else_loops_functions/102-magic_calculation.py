@@ -1,9 +1,6 @@
 #!/usr/bin/python3
-#Author: Okeke Makuochukwu
-
-
 def magic_calculation(a, b, c):
-     if a < b:
+    if a < b:
         return (c)
     if c > b:
         return (a + b)
