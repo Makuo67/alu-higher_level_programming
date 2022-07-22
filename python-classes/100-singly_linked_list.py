@@ -14,11 +14,10 @@ class Node:
         return self.__data
 
     @data.setter
-    def data(self, value):
-        if type(value) is not int:
+     def data(self, value):
+        if not isinstance(value, int):
             raise TypeError("data must be an integer")
-        else:
-            self.__data = value
+        self.__data = value 
 
     @property
     def next_node(self):
@@ -26,10 +25,9 @@ class Node:
 
     @next_node.setter
     def next_node(self, value):
-        if type(value) is not Node or value is not None:
-            raise TypeError('next_node must be a Node object')
-        else:
-            self.next_node = value
+       if not isinstance(value, Node) and value is not None:
+            raise TypeError("next_node must be a Node object")
+       self.__next_node = value 
 
 """write a class SinglyLinkedList that defines a singly linked list"""
 
