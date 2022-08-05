@@ -2,4 +2,4 @@
 -- Query to update the score of BOB to 10
 UPDATE FROM second_table
 WHERE name='Bob'
-score = 10;
+SET score = 10;
