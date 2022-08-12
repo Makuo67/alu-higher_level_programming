@@ -13,7 +13,7 @@ def add_integer(a, b=98):
         TypeError: a must be an integer or b must be an integer
     '''
     if a != type(int) and  a != type(float):
-        raise TypeError ('a must be an integer')
+        raise TypeError('a must be an integer')
     if b != type(int) and b != type(float):
         raise TypeError('b must be an integer')
     return (int(a) + int(b))
