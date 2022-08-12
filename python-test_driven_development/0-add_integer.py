@@ -3,15 +3,11 @@
 
 
 def add_integer(a, b=98):
-    ''' A function that adds 2 integers a and b
-
-    a and b must be first casted to integers if they are float
-
-    a and b must be integers or floats
-
+     """Return the integer addition of a and b.
+    Float arguments are typecasted to ints before addition is performed.
     Raises:
-        TypeError: a must be an integer or b must be an integer
-    '''
+        TypeError: If either of a or b is a non-integer and non-float.
+    """
     if a != type(int) and  a != type(float):
         raise TypeError('a must be an integer')
     if b != type(int) and b != type(float):
