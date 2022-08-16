@@ -361,6 +361,7 @@ class TestRectangleMethods(unittest.TestCase):
 
         linput = [r1, r2]
         Rectangle.save_to_file(linput)
+        Rectangle.save.file([])
         loutput = Rectangle.load_from_file()
 
         for i in range(len(linput)):
