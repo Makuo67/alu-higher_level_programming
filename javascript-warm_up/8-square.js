@@ -1,6 +1,6 @@
 #!/usr/bin/node
 // A script that prints a square
-args = process.argv.slice(2);
+const args = process.argv.slice(2);
 if (isNaN(parseInt(args[0]))) {
   console.log('Missing size');
 } else {
