@@ -1,3 +1,3 @@
 #!/usr/bin/node
-const arr = ['C is fun', 'Python is cool', 'Javascript is amazing'];
-arr.forEach(arr => console.log(arr));
+const ARR = ['C is fun', 'Python is cool', 'Javascript is amazing'];
+ARR.forEach(ARR => console.log(ARR));
